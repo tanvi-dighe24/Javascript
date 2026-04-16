@@ -1,0 +1,30 @@
+// document.writeln("Have a great sleep")
+// console.log("hiiiiiii");
+
+// Decalartion
+var a
+// Initialization
+a = 100
+// Re-initialization
+a = 800
+//  Re-declaration
+var a 
+console.log(a);
+
+// Decalartion
+let b
+// Initialization
+b = 700
+// Re-initialization
+b = 8000
+//  Re-declaration
+// let b
+console.log(b);
+
+// Decalartion and Initialization
+const c = 90
+// Re-initialization
+// c = 20
+//  Re-declaration
+// const c = 80
+console.log(c); 
