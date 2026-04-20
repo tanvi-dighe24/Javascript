@@ -75,13 +75,37 @@
 
 // ! Callback function : The function which is passed as an argument to one more function
 
-function operation(a,b,task){
-    let res = task(a,b)
-    return res;
-}
+// function operation(a,b,task){
+//     let res = task(a,b)
+//     return res;
+// }
 
-let add = operation(2,3,function(x,y){return x+y})
-console.log(add);
+// let add = operation(2,3,function(x,y){return x+y})
+// console.log(add);
 
-let mul = operation(4,6,(p,q)=> p*q )
-console.log(mul); 
+// let mul = operation(4,6,(p,q)=> p*q )
+// console.log(mul);
+
+// ! Generator function : to generate the values using yield keyword
+// function* generate(){
+//     yield 122;
+//     yield "manu";
+//     yield true;
+//     yield 5683.89;
+//     yield 357
+// }
+
+// let res = generate()
+// // console.log(http://res.next().value);
+// // console.log(http://res.next().value);
+// // console.log(http://res.next().value);
+// // console.log(http://res.next().value);
+// // console.log(http://res.next().value);
+
+// for(let i=1;i<=5;i++){
+//     console.log(http://res.next().value);
+// }
+
+// ! Design a function with two parameters -- username and address
+// print : Hello I am username from address
+// take user input
