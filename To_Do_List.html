@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <section>
+        <div>
+            <input type="text" placeholder="ENTER THE TASK">
+            <button>ADD</button>
+        </div>
+        <ul id="task_list"></ul>
+    </section>
+
+
+    <script>
+        let list = document.getElementById("task_list")
+        let inputElement= document.querySelector('input')
+        let btn = document.querySelector('button')
+        btn.addEventListener('click',()=>{
+            // ! adding list item
+            let newElement = document.createElement('li')
+            newElement.innerText = inputElement.value;
+
+            list.appendChild(newElement)
+
+            inputElement.value = ""
+
+            newElement.addEventListener('dblclick',()=>{
+                newElement.remove()
+            })
+
+        })
+    </script>
+</body>
+</html> 
